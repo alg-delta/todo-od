@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ht1 {
+  transform: scaleX(-1) scale(1.5);
+  margin-top: 30px;
+}
+
+.ht2 {
+  margin-top: 30px;
+  transform: scaleX(-1);
+  transform: scale(1.5);
+}
+
+.aa2 {
+  text-align: center;
+  transform: scale(0.9);
+}
+
+/* Стилі для мобільних пристроїв, які відрізняються */
+@media (max-width: 768px) {
+  .App {
+    flex-wrap: wrap;
+  }
+
+  .bb2 {
+    order: 2;
+    max-width: 100%;
+  }
+
+  .ht1 {
+    width: 40%;
+  }
+
+  .ht2 {
+    order: 1;
+    width: 40%;
+  }
+
+  .aa2 {
+    width: 90%;
+  }
+
+  .main {
+    max-width: 80%;
+  }
+}
