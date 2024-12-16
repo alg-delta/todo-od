@@ -4,7 +4,7 @@ import TaskList from "./TaskList";
 
 export default function Main() {
   const [list, setList] = useState(() => {
-    return JSON.parse(localStorage.getItem("savedList")) ?? [];
+    return JSON.parse(localStorage.getItem("savedListOD")) ?? [];
   });
   const addTask = (task) => {
     // console.log("1");
@@ -33,7 +33,7 @@ export default function Main() {
     setList(newList);
   };
   useEffect(() => {
-    localStorage.setItem("savedList", JSON.stringify(list));
+    localStorage.setItem("savedListOD", JSON.stringify(list));
   }, [list]);
 
   return (
